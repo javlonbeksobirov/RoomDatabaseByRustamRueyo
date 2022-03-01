@@ -39,6 +39,10 @@ class MainActivity : AppCompatActivity() {
 //                tvGetData.text = appDatabase.productDao().getAllProduct().toString()
             }
 
+            deleteBtn.setOnClickListener {
+                appDatabase.productDao().removeProduct(13)
+            }
+
         }
     }
 }
